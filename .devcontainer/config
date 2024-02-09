@@ -1,7 +1,8 @@
 # SnowSQL config
 
 [connections.dev]
-accountname = XGB00301
+
+accountname = XGB00301.snowflakecomputing.com
 username = rammerny
 password = Ramanation2024$ 
 rolename = HOL_ROLE

@@ -2,7 +2,7 @@
 
 [connections.dev]
 
-accountname = xgb00301.us-east-1.snowflakecomputing.com 
+accountname = xgb00301.snowflakecomputing.com 
 username = rammerny
 password = Ramanation2024$ 
 rolename = HOL_ROLE

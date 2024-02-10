@@ -25,7 +25,7 @@ def get_snowpark_session() -> Session:
     # related tools work IMO
     # if using snowsql config, like snowcli does
     #elif os.path.exists(os.path.expanduser('~/.snowsql/config')):
-    elif os.path.exists(os.path.expanduser('~/.devcontainer/config')):    
+    elif os.path.exists(os.path.expanduser('/workspaces/sfguide-data-engineering-with-snowpark-python/.devcontainer/config')):    
         snowpark_config = get_snowsql_config()
         SnowflakeConnection().connection = Session.builder.configs(snowpark_config).create()
     # otherwise configure from environment variables
@@ -54,7 +54,7 @@ def get_snowpark_session() -> Session:
 def get_snowsql_config(
     connection_name: str = 'dev',
     #config_file_path: str = os.path.expanduser('~/.snowsql/config'),
-    config_file_path: str = os.path.expanduser('~/.devcontainer/config'),
+    config_file_path: str = os.path.expanduser('/workspaces/sfguide-data-engineering-with-snowpark-python/.devcontainer/config'),
 ) -> dict:
     import configparser
 

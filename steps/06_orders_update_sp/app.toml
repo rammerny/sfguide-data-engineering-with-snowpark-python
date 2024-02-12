@@ -1,4 +1,5 @@
-snowsql_config_path = "~/.snowsql/config"
+
+snowsql_config_path = "/workspaces/sfguide-data-engineering-with-snowpark-python/.devcontainer/config"
 snowsql_connection_name = "dev"
 
 [default]
